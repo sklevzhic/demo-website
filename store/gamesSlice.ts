@@ -29,12 +29,7 @@ const initialState: GamesState = {
             description: "Описание игры 4",
             levels: Crossy
         },
-        "cururtAlisy": {
-            name: "Курорт Алисы",
-            image: CurortAlisyImg,
-            description: "Описание игры 4",
-            levels: CurortAlisy
-        },
+
 
     }
 }
