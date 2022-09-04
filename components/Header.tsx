@@ -38,11 +38,13 @@ export const Header: React.FC<HeaderProps> = () => {
                     <div className="flex items-center justify-between h-16 border-b">
                         <div className="flex items-center">
                             <div className="flex-shrink-0">
-                                <img
-                                    className="h-8 w-8"
-                                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                                    alt="Workflow"
-                                />
+                                <Link href={"/"}>
+                                    <img
+                                        className="h-8 w-8 cursor-pointer"
+                                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                        alt="Workflow"
+                                    />
+                                </Link>
                             </div>
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
@@ -68,18 +70,15 @@ export const Header: React.FC<HeaderProps> = () => {
                         <div className="-mr-2 flex md:hidden">
                             {/* Mobile menu button */}
                             <Disclosure.Button
-                                className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+                                className="bg-gray-100 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-600 focus:ring-white">
                                 <span className="sr-only">Open main menu</span>
                                 {open ? (
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                                        <path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375z" />
-                                        <path fillRule="evenodd" d="M3.087 9l.54 9.176A3 3 0 006.62 21h10.757a3 3 0 002.995-2.824L20.913 9H3.087zM12 10.5a.75.75 0 01.75.75v4.94l1.72-1.72a.75.75 0 111.06 1.06l-3 3a.75.75 0 01-1.06 0l-3-3a.75.75 0 111.06-1.06l1.72 1.72v-4.94a.75.75 0 01.75-.75z" clipRule="evenodd" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+                                        <path fillRule="evenodd" d="M5.23 15.79a.75.75 0 01-.02-1.06l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 11-1.08 1.04L10 11.832 6.29 15.77a.75.75 0 01-1.06.02zm0-6a.75.75 0 01-.02-1.06l4.25-4.5a.75.75 0 011.08 0l4.25 4.5a.75.75 0 11-1.08 1.04L10 5.832 6.29 9.77a.75.75 0 01-1.06.02z" clipRule="evenodd" />
                                     </svg>
-
                                 ) : (
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                                        <path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375z" />
-                                        <path fillRule="evenodd" d="M3.087 9l.54 9.176A3 3 0 006.62 21h10.757a3 3 0 002.995-2.824L20.913 9H3.087zm6.163 3.75A.75.75 0 0110 12h4a.75.75 0 010 1.5h-4a.75.75 0 01-.75-.75z" clipRule="evenodd" />
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
+                                        <path fillRule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clipRule="evenodd" />
                                     </svg>
 
                                 )}
@@ -104,41 +103,41 @@ export const Header: React.FC<HeaderProps> = () => {
                             </Disclosure.Button>
                         ))}
                     </div>
-                    <div className="pt-4 pb-3 border-t border-gray-700">
-                        <div className="flex items-center px-5">
-                            <div className="flex-shrink-0">
-                                <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt=""/>
-                            </div>
-                            <div className="ml-3">
-                                <div className="text-base font-medium leading-none text-white">{user.name}</div>
-                                <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>
-                            </div>
-                            <button
-                                type="button"
-                                className="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
-                            >
-                                <span className="sr-only">View notifications</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
-                                    <path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375z" />
-                                    <path fillRule="evenodd" d="M3.087 9l.54 9.176A3 3 0 006.62 21h10.757a3 3 0 002.995-2.824L20.913 9H3.087zm6.163 3.75A.75.75 0 0110 12h4a.75.75 0 010 1.5h-4a.75.75 0 01-.75-.75z" clipRule="evenodd" />
-                                </svg>
+                    {/*<div className="pt-4 pb-3 border-t border-gray-700">*/}
+                    {/*    <div className="flex items-center px-5">*/}
+                    {/*        <div className="flex-shrink-0">*/}
+                    {/*            <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt=""/>*/}
+                    {/*        </div>*/}
+                    {/*        <div className="ml-3">*/}
+                    {/*            <div className="text-base font-medium leading-none text-white">{user.name}</div>*/}
+                    {/*            <div className="text-sm font-medium leading-none text-gray-400">{user.email}</div>*/}
+                    {/*        </div>*/}
+                    {/*        <button*/}
+                    {/*            type="button"*/}
+                    {/*            className="ml-auto bg-gray-800 flex-shrink-0 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"*/}
+                    {/*        >*/}
+                    {/*            <span className="sr-only">View notifications</span>*/}
+                    {/*            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">*/}
+                    {/*                <path d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375z" />*/}
+                    {/*                <path fillRule="evenodd" d="M3.087 9l.54 9.176A3 3 0 006.62 21h10.757a3 3 0 002.995-2.824L20.913 9H3.087zm6.163 3.75A.75.75 0 0110 12h4a.75.75 0 010 1.5h-4a.75.75 0 01-.75-.75z" clipRule="evenodd" />*/}
+                    {/*            </svg>*/}
 
-                            </button>
-                        </div>
-                        <div className="mt-3 px-2 space-y-1">
-                            {userNavigation.map((item) => (
-                                <Disclosure.Button
-                                    key={item.name}
-                                    as="a"
-                                    href={item.href}
-                                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
-                                >
+                    {/*        </button>*/}
+                    {/*    </div>*/}
+                    {/*    <div className="mt-3 px-2 space-y-1">*/}
+                    {/*        {userNavigation.map((item) => (*/}
+                    {/*            <Disclosure.Button*/}
+                    {/*                key={item.name}*/}
+                    {/*                as="a"*/}
+                    {/*                href={item.href}*/}
+                    {/*                className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"*/}
+                    {/*            >*/}
 
-                                    {item.name}
-                                </Disclosure.Button>
-                            ))}
-                        </div>
-                    </div>
+                    {/*                {item.name}*/}
+                    {/*            </Disclosure.Button>*/}
+                    {/*        ))}*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </Disclosure.Panel>
             </>
         )}

@@ -33,9 +33,9 @@ const GamePage: React.FC<GamePageProps> = () => {
 
                 {
                     Object.keys(levels).map(el => {
-                        return <div key={el}>
+                        return <div key={el} className={"border rounded-l m-0.5 p-1"}>
                             Вопрос: {levels[el].question} <br/>
-                            Answer: {levels[el].answer} <br/>
+                            Ответ: {levels[el].answer} <br/>
                         </div>
                     })
                 }

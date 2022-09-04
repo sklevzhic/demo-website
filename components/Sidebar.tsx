@@ -1,6 +1,7 @@
 import React from "react";
 import {useAppSelector} from "../hooks/useAppSelector";
 import Link from "next/link";
+import Image from "next/image";
 
 interface SidebarProps {
 
@@ -25,9 +26,9 @@ const Sidebar: React.FC<SidebarProps> = () => {
                     Object.keys(games).map(key => {
                         return <li key={key} className="py-3 sm:py-4">
                             <div className="flex items-center space-x-4">
-                                <div className="flex-shrink-0">
-                                    <img className="w-8 h-8 rounded-full"
-                                         src="https://bygame.ru/uploads/ai1/recepty-alhimiya-na-bumage-zhivotnye.jpg"
+                                <div className="flex-shrink-0 w-8 h-8 overflow-hidden">
+                                    <Image className="rounded-full"
+                                         src={games[key].image}
                                          alt="1"/>
                                 </div>
                                 <div className="flex-1 min-w-0">
