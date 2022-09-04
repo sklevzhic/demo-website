@@ -4,8 +4,10 @@ import {PazliSlov} from "../games/igra-pazli-slov";
 import PS from "../assets/images/pazli-slov.jpg"
 import Zagadki from "../assets/images/350-zagadok.jpg"
 import CrossyImg from "../assets/images/krossy.jpg"
+import CurortAlisyImg from "../assets/images/kurort-alisy.jpg"
 import {ThreeHundredFiftyWords} from "../games/350words";
 import { Crossy } from '../games/crossy';
+import {CurortAlisy} from "../games/cururtalisy";
 
 const initialState: GamesState = {
     games: {
@@ -26,6 +28,12 @@ const initialState: GamesState = {
             image: CrossyImg,
             description: "Описание игры 4",
             levels: Crossy
+        },
+        "cururtAlisy": {
+            name: "Курорт Алисы",
+            image: CurortAlisyImg,
+            description: "Описание игры 4",
+            levels: CurortAlisy
         },
 
     }
