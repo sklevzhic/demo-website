@@ -11,12 +11,12 @@ const Sidebar: React.FC<SidebarProps> = () => {
     return <div className={"p-2"}>
         <div className="flex justify-between items-center mb-4">
             <h5 className="text-xl font-bold leading-none text-gray-900">Popular Games</h5>
-            <Link href={"/games"}>
-                <a
-                    className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
-                    View all
-                </a>
-            </Link>
+            {/*<Link href={"/games"}>*/}
+            {/*    <a*/}
+            {/*        className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">*/}
+            {/*        View all*/}
+            {/*    </a>*/}
+            {/*</Link>*/}
 
         </div>
         <div className="flow-root">
