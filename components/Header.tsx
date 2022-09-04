@@ -1,5 +1,4 @@
 import React from 'react'
-import {UserInfo} from "./nav/UserInfo";
 import {Disclosure} from "@headlessui/react";
 import Link from 'next/link';
 
@@ -134,6 +133,7 @@ export const Header: React.FC<HeaderProps> = () => {
                                     href={item.href}
                                     className="block px-3 py-2 rounded-md text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700"
                                 >
+
                                     {item.name}
                                 </Disclosure.Button>
                             ))}
