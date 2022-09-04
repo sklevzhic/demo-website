@@ -3,6 +3,7 @@ import Head from 'next/head'
 import {useSelector} from "react-redux";
 import {RootState} from "../store";
 import { MainLayout } from '../components/layout/MainLayout';
+import Image from "next/image";
 
 const Home: NextPage = () => {
     let { games } = useSelector((state: RootState) => state.games)
@@ -29,7 +30,7 @@ const Home: NextPage = () => {
                                         return <div key={key} className="w-[30%] my-1 items-center bg-white rounded-lg border shadow-md overflow-hidden
                                     md:flex-row md:max-w-xl hover:bg-gray-100">
                                             <figure className={"overflow-hidden"}>
-                                                <img
+                                                <Image
                                                     className="object-none h-40 "
                                                     src={games[key].image}
                                                     alt=""/>
