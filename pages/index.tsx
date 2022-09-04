@@ -24,24 +24,24 @@ const Home: NextPage = () => {
                         {/* Replace with your content */}
                         <div className="px-4 py-6 sm:px-0">
                             <div className="flex flex-wrap justify-between">
-                                {/*{*/}
-                                {/*    Object.keys(games).map(key => {*/}
-                                {/*        return <div key={key} className="w-[30%] my-1 items-center bg-white rounded-lg border shadow-md overflow-hidden*/}
-                                {/*    md:flex-row md:max-w-xl hover:bg-gray-100">*/}
-                                {/*            <figure className={"overflow-hidden"}>*/}
-                                {/*                <img*/}
-                                {/*                    className="object-none h-40 "*/}
-                                {/*                    src={games[key].image}*/}
-                                {/*                    alt=""/>*/}
-                                {/*            </figure>*/}
-                                {/*            <div className="flex flex-col justify-between p-4 leading-normal">*/}
-                                {/*                <h5 className="mb-2 text-l line-clamp-1 font-bold tracking-tight text-gray-900">{games[key].name}</h5>*/}
-                                {/*                <p className="mb-3 font-normal text-gray-700 line-clamp-2">{games[key].description}</p>*/}
-                                {/*                <button className={"bg-red-50"}>Подробнее</button>*/}
-                                {/*            </div>*/}
-                                {/*        </div>*/}
-                                {/*    })*/}
-                                {/*}*/}
+                                {
+                                    Object.keys(games).map(key => {
+                                        return <div key={key} className="w-[30%] my-1 items-center bg-white rounded-lg border shadow-md overflow-hidden
+                                    md:flex-row md:max-w-xl hover:bg-gray-100">
+                                            <figure className={"overflow-hidden"}>
+                                                <img
+                                                    className="object-none h-40 "
+                                                    src={games[key].image}
+                                                    alt=""/>
+                                            </figure>
+                                            <div className="flex flex-col justify-between p-4 leading-normal">
+                                                <h5 className="mb-2 text-l line-clamp-1 font-bold tracking-tight text-gray-900">{games[key].name}</h5>
+                                                <p className="mb-3 font-normal text-gray-700 line-clamp-2">{games[key].description}</p>
+                                                <button className={"bg-red-50"}>Подробнее</button>
+                                            </div>
+                                        </div>
+                                    })
+                                }
 
 
                             </div>

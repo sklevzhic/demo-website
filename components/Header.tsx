@@ -46,21 +46,21 @@ export const Header: React.FC<HeaderProps> = () => {
                             </div>
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
-                                    {/*{navigation.map((item) => (*/}
-                                    {/*    <Link key={item.href} href={item.href}>*/}
-                                    {/*        <a className={classNames(*/}
-                                    {/*                item.current*/}
-                                    {/*                    ? 'bg-gray-900 text-white'*/}
-                                    {/*                    : 'text-gray-900 hover:bg-gray-900 hover:text-white',*/}
-                                    {/*                'px-3 py-2 rounded-md text-sm font-medium'*/}
-                                    {/*            )}*/}
-                                    {/*            aria-current={item.current ? 'page' : undefined}*/}
-                                    {/*        >*/}
-                                    {/*            {item.name}*/}
-                                    {/*        </a>*/}
-                                    {/*    </Link>*/}
+                                    {navigation.map((item) => (
+                                        <Link key={item.href} href={item.href}>
+                                            <a className={classNames(
+                                                    item.current
+                                                        ? 'bg-gray-900 text-white'
+                                                        : 'text-gray-900 hover:bg-gray-900 hover:text-white',
+                                                    'px-3 py-2 rounded-md text-sm font-medium'
+                                                )}
+                                                aria-current={item.current ? 'page' : undefined}
+                                            >
+                                                {item.name}
+                                            </a>
+                                        </Link>
 
-                                    {/*))}*/}
+                                    ))}
                                 </div>
                             </div>
                         </div>
