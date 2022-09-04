@@ -14,9 +14,10 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
+
             <div>
                 { Object.keys(games).map(game => {
-                    return <h1 className="text-3xl font-bold underline">{games[game].name}</h1>
+                    return <h1 key={game} className="text-3xl font-bold underline">{games[game].name}</h1>
                 })}
             </div>
         </div>
