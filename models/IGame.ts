@@ -1,5 +1,5 @@
 export interface ILevelGame {
-    question: string,
+    question: string | number,
     answer: string,
 }
 

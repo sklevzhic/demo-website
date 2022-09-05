@@ -3,6 +3,7 @@ import React from "react";
 import {MainLayout} from "../../components/layout/MainLayout";
 import {useAppSelector} from "../../hooks/useAppSelector";
 import Head from "next/head";
+import Image from "next/image";
 
 interface GamePageProps {
 
@@ -28,11 +29,11 @@ const GamePage: React.FC<GamePageProps> = () => {
         <MainLayout>
             <div className={"p-3"}>
                 <div className="flex">
-                    <figure className={"overflow-hidden"}>
-                        <img className={"w-48 h-48 object-none"} src={img} alt=""/>
-                    </figure>
+                    <div className="overflow-hidden w-32 h-32">
+                        <Image className="object-fill rounded-2xl" src={img}/>
+                    </div>
                     <div className={"p-2"}>
-                        <h1 className="text-3xl font-bold text-gray-900 my-8">{name}</h1>
+                        <h1 className="text-3xl font-bold text-gray-900">{name}</h1>
                         <p>{description}</p>
                     </div>
                 </div>

@@ -10,6 +10,8 @@ import AlchemysioImg from "../assets/images/alchemy2.jpg"
 import DoodleAlchemyImg from "../assets/images/da.jpg"
 import SlovariumImg from "../assets/images/slovarium.jpg"
 import SemSlovImg from "../assets/images/7-slov.jpg"
+import StenaSlovImg from "../assets/images/stena-slov.jpg"
+import SlovesnitSousImg from "../assets/images/stena-slov.jpg"
 import {ThreeHundredFiftyWords} from "../games/350words";
 import { Crossy } from '../games/crossy';
 import {CurortAlisy} from "../games/cururtalisy";
@@ -19,6 +21,7 @@ import {DoodleAlchemy} from "../games/da";
 import {Slovarium} from "../games/slovarium";
 import {SemSlov} from "../games/sem-slov";
 import { StenaSlov } from '../games/stenaSlov';
+import {SlovesniySous} from "../games/slovesniysous";
 
 const initialState: GamesState = {
     games: {
@@ -78,9 +81,15 @@ const initialState: GamesState = {
         },
         "stena-slov": {
             name: "Стена Слов",
-            image: SemSlovImg,
+            image: StenaSlovImg,
             description: "Описание игры 4",
             levels: StenaSlov
+        },
+        "slovesniy-sous": {
+            name: "Словесный Соус (Word Sauce)",
+            image: SlovesnitSousImg,
+            description: "Описание игры 4",
+            levels: SlovesniySous
         },
     }
 }

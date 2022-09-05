@@ -19,6 +19,7 @@ const GamesPage: React.FC<GamesPageProps> = () => {
             </div>
         </header>
         <main>
+            
             <div className="flex flex-col">
                 {
                     Object.keys(games).map(key => {
@@ -28,8 +29,8 @@ const GamesPage: React.FC<GamesPageProps> = () => {
                                     <Image className="object-fill" src={games[key].image}/>
                                 </div>
                                 <div className="flex flex-col justify-between p-4 leading-normal">
-                                    <h5 className="text-l line-clamp-1 font-bold tracking-tight text-gray-900">{games[key].name}</h5>
-                                    <p className="font-light text-gray-700 line-clamp-2">{games[key].description}</p>
+                                    <h5 className="text-l line-clamp-1 mt-3 font-bold tracking-tight text-gray-900">{games[key].name}</h5>
+                                    {/*<p className="font-light text-gray-700 line-clamp-2">{games[key].description}</p>*/}
                                 </div>
                             </div>
                         </Link>
