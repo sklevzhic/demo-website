@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fb4431b-108e-4bf3-9c2c-acc5c95a42d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/demo-website.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/stena-slov.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/games/slovesniysous.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/350-zagadok.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/350-zagadok.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/7-slov.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/7-slov.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/alchemy2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/alchemy2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/da.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/da.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/daa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/daa.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/krossy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/krossy.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/kurort-alisy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/kurort-alisy.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pazli-slov.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/pazli-slov.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/slovarium.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/slovarium.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/IGame.ts" beforeDir="false" afterPath="$PROJECT_DIR$/models/IGame.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/games/wordsgram.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/games/[game].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/games/[game].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/games/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/games/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/gamesSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/store/gamesSlice.ts" afterDir="false" />
@@ -64,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662364849339</updated>
       <workItem from="1662364851379" duration="3890000" />
-      <workItem from="1662375993944" duration="276000" />
+      <workItem from="1662375993944" duration="6561000" />
     </task>
     <servers />
   </component>

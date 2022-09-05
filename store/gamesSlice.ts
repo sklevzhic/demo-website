@@ -12,6 +12,7 @@ import SlovariumImg from "../assets/images/slovarium.jpg"
 import SemSlovImg from "../assets/images/7-slov.jpg"
 import StenaSlovImg from "../assets/images/stena-slov.jpg"
 import SlovesnitSousImg from "../assets/images/stena-slov.jpg"
+import WordsgramImg from "../assets/images/wordsgram.jpg"
 import {ThreeHundredFiftyWords} from "../games/350words";
 import { Crossy } from '../games/crossy';
 import {CurortAlisy} from "../games/cururtalisy";
@@ -22,6 +23,7 @@ import {Slovarium} from "../games/slovarium";
 import {SemSlov} from "../games/sem-slov";
 import { StenaSlov } from '../games/stenaSlov';
 import {SlovesniySous} from "../games/slovesniysous";
+import { Wordsgram } from '../games/wordsgram';
 
 const initialState: GamesState = {
     games: {
@@ -91,6 +93,13 @@ const initialState: GamesState = {
             description: "Описание игры 4",
             levels: SlovesniySous
         },
+        "wordsgram": {
+            name: "Wordsgram",
+            image: WordsgramImg,
+            description: "Описание игры 4",
+            levels: Wordsgram
+        },
+
     }
 }
 

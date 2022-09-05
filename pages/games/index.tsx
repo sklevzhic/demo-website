@@ -19,12 +19,12 @@ const GamesPage: React.FC<GamesPageProps> = () => {
             </div>
         </header>
         <main>
-            
+
             <div className="flex flex-col">
                 {
                     Object.keys(games).map(key => {
                         return <Link key={key} href={"/games/" + key}>
-                            <div key={key} className="shadow-md flex rounded-lg my-1 overflow-hidden">
+                            <div key={key} className="shadow-md flex rounded-lg my-1 overflow-hidden cursor-pointer">
                                 <div className="bg-yellow-300 overflow-hidden w-20 h-20">
                                     <Image className="object-fill" src={games[key].image}/>
                                 </div>
