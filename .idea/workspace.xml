@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3fb4431b-108e-4bf3-9c2c-acc5c95a42d1" name="Changes" comment="">
+    <list default="true" id="3fb4431b-108e-4bf3-9c2c-acc5c95a42d1" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/assets/images/braindom.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/images/braindom2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/games/[game].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/games/[game].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/gamesSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/store/gamesSlice.ts" afterDir="false" />
@@ -52,8 +54,16 @@
       <workItem from="1662364851379" duration="3890000" />
       <workItem from="1662375993944" duration="6561000" />
       <workItem from="1662397329718" duration="3091000" />
-      <workItem from="1662406315188" duration="2088000" />
+      <workItem from="1662406315188" duration="2685000" />
     </task>
+    <task id="LOCAL-00001" summary="fix">
+      <created>1662408997310</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662408997311</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,5 +79,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
