@@ -13,6 +13,8 @@ import SemSlovImg from "../assets/images/7-slov.jpg"
 import StenaSlovImg from "../assets/images/stena-slov.jpg"
 import SlovesnitSousImg from "../assets/images/stena-slov.jpg"
 import WordsgramImg from "../assets/images/wordsgram.jpg"
+import BraindomImg from "../assets/images/braindom.jpg"
+import Braindom2Img from "../assets/images/braindom2.jpg"
 import {ThreeHundredFiftyWords} from "../games/350words";
 import { Crossy } from '../games/crossy';
 import {CurortAlisy} from "../games/cururtalisy";
@@ -24,6 +26,8 @@ import {SemSlov} from "../games/sem-slov";
 import { StenaSlov } from '../games/stenaSlov';
 import {SlovesniySous} from "../games/slovesniysous";
 import { Wordsgram } from '../games/wordsgram';
+import {Braindom} from "../games/braindom";
+import {Braindom2} from "../games/braindom2";
 
 const initialState: GamesState = {
     games: {
@@ -99,7 +103,18 @@ const initialState: GamesState = {
             description: "Описание игры 4",
             levels: Wordsgram
         },
-
+        "braindom": {
+            name: "Braindom",
+            image: BraindomImg,
+            description: "Описание игры 4",
+            levels: Braindom
+        },
+        "braindom2": {
+            name: "Braindom 2",
+            image: Braindom2Img,
+            description: "Описание игры 4",
+            levels: Braindom2
+        },
     }
 }
 

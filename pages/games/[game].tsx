@@ -32,10 +32,12 @@ const GamePage: React.FC<GamePageProps> = () => {
                 <meta name="description" content="THE ANSWERS.SU - Ответы, Прохождение игр." />
                 <meta name="keywords" content="Ответы, Прохождение игр." />
             </Head>
+
+
             <div className={"p-3"}>
                 <div className="flex">
-                    <div className="overflow-hidden w-32 h-32">
-                        <Image className="object-fill rounded-2xl" src={img}/>
+                    <div className="overflow-hidden w-32 h-32" >
+                        {/*<Image className="object-fill rounded-2xl" src={img}/>*/}
                     </div>
                     <div className={"p-2"}>
                         <h1 className="text-3xl font-bold text-gray-900">{name}</h1>
@@ -53,9 +55,9 @@ const GamePage: React.FC<GamePageProps> = () => {
 
                 {
                     Object.keys(levels).map(el => {
-                        return <div key={el} className={"border rounded-l m-0.5 p-1"}>
-                            Вопрос: {levels[el].question} <br/>
-                            Ответ: {levels[el].answer} <br/>
+                        return <div key={el} className={"border rounded-l m-0.5 p-2"}>
+                            <h5 className={"text-l font-semibold my-0.5"}>Вопрос: {levels[el].question} </h5>
+                            <p>Ответ: {levels[el].answer} </p>
                         </div>
                     })
                 }

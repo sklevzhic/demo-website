@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fb4431b-108e-4bf3-9c2c-acc5c95a42d1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/games/wordsgram.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/games/[game].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/games/[game].tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/games/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/games/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/store/gamesSlice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/store/gamesSlice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,19 +22,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/games" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="D:\projects\demo-website\node_modules\typescript\lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alexander/projects/demo-website/games&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/alexander/projects/demo-website/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/games" />
       <recent name="D:\projects\demo-website\games" />
     </key>
   </component>
@@ -51,6 +51,8 @@
       <updated>1662364849339</updated>
       <workItem from="1662364851379" duration="3890000" />
       <workItem from="1662375993944" duration="6561000" />
+      <workItem from="1662397329718" duration="3091000" />
+      <workItem from="1662406315188" duration="2088000" />
     </task>
     <servers />
   </component>
