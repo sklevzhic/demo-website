@@ -1,10 +1,6 @@
 import {ILevel} from "../models/IGame";
 
 export const PazliSlov: ILevel = {
-    "0": {
-        "question": "Пазлы слов. Уровень — 0",
-        "answer": "Год"
-    },
     "1": {
         "question": "Пазлы слов. Уровень — 0",
         "answer": "Год"
